@@ -1,0 +1,3 @@
+C:\Users\EgonB062\source\repos\CUnitTestAppl2\Debug\CUnitTestAppl2.exe
+C:\CUnit_zip\CUnitTestAppl2\Debug\CUnitTestAppl2.exe
+C:\Temp\CUnitTestAppl2\CUnitTestAppl2\Debug\CUnitTestAppl2.exe
