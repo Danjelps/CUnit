@@ -48,6 +48,9 @@
     <ClCompile Include="CUnit\src\Util.c">
       <Filter>Source Files\CUnit</Filter>
     </ClCompile>
+    <ClCompile Include="CUnit\src\Automated.c">
+      <Filter>Source Files\CUnit</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CUnit\hdr\Automated.h">

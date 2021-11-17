@@ -1,5 +1,12 @@
-﻿  InitDeinit.c
-  UnitTestmain.c
+﻿  Automated.c
+  Basic.c
+  CUError.c
+  MyMem.c
+  TestDB.c
+  TestRun.c
+  Util.c
+  InitDeinit.c
   main.c
+  UnitTestmain.c
   Generating Code...
-  CUnitTestAppl2.vcxproj -> C:\CUnit_zip\CUnitTestAppl2\Debug\CUnitTestAppl2.exe
+  CUnitTestAppl2.vcxproj -> C:\work\SW\cunit\CUnitTestAppl2\CUnitTestAppl2\Debug\CUnitTestAppl2.exe

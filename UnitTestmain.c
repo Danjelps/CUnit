@@ -1,10 +1,18 @@
 #include <CUnit.h>
 #include <TestDB.h>
 #include <InitDeinit.h>
+#include <Automated.h>
 #include <Basic.h>
 #include <assert.h>
+#include <stdbool.h>
 
 //#define CU_DLL
+
+#define OUTPUTFILE_LENGTH 50
+
+static void runAutomatedTests(char* pFileName);
+static void runBasicTestsOutputToFile(char* pFileName);
+static void runBasicTests(void);
 
 static CU_TestInfo cmdTests[] = {
 	{ "CmdTest1", CmdTest1 },
@@ -18,7 +26,7 @@ static CU_SuiteInfo CmdSuite[] =
 	CU_SUITE_INFO_NULL,
 };
 
-int test_main(void)
+int test_main(int argc, char* argv[])
 {
 	CU_initialize_registry();
 
@@ -32,11 +40,66 @@ int test_main(void)
 	}
 	else
 	{
-		CU_basic_set_mode(CU_BRM_VERBOSE);
-		CU_set_error_action(CUEA_IGNORE);
-		printf("\nTests completed with return value %d.\n", CU_basic_run_tests());
-		CU_cleanup_registry();
+		char outputFile[OUTPUTFILE_LENGTH] = "TestAutomated";
+
+		if (argc > 1)
+		{
+			/* parse output file name */
+			if (argc > 2)
+			{
+				if (strlen(argv[2]) < OUTPUTFILE_LENGTH)
+				{
+					strcpy(outputFile, argv[2]);
+				}
+			}
+
+			/* parse output type */
+			if (!strcmp("xml", argv[1]))
+			{
+				runAutomatedTests(outputFile);
+			}
+			else if (!strcmp("txt", argv[1]))
+			{
+				strcat(outputFile, ".txt");
+
+				runBasicTestsOutputToFile(outputFile);
+			}
+			else
+			{
+				printf("invalid parameter\n");
+			}
+		}
+		else
+		{
+			runBasicTests();
+		}
 	}
 
 	return 0;
+}
+
+static void runAutomatedTests(char* pFileName)
+{
+	CU_set_error_action(CUEA_IGNORE);
+	CU_set_output_filename(pFileName);
+	CU_list_tests_to_file();
+	CU_automated_run_tests();
+	CU_cleanup_registry();
+}
+
+static void runBasicTestsOutputToFile(char* pFileName)
+{
+	(void)freopen(pFileName, "w+", stdout);
+
+	runBasicTests();
+
+	(void)freopen("CON", "w", stdout);
+}
+
+static void runBasicTests(void)
+{
+	CU_basic_set_mode(CU_BRM_VERBOSE);
+	CU_set_error_action(CUEA_IGNORE);
+	printf("\nTests completed with return value %d.\n", CU_basic_run_tests());
+	CU_cleanup_registry();
 }

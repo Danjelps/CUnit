@@ -4,11 +4,7 @@
 
 //#define CU_DLL
 
-int main()
+int main(int argc, char* argv[])
 {
-	printf("Hallo");
-
-	test_main();
-
-	return 0;
+	return test_main(argc, argv);
 }

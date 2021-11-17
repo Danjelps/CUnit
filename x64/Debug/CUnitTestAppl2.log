@@ -1,0 +1,72 @@
+﻿  Automated.c
+  Basic.c
+  CUError.c
+  MyMem.c
+  TestDB.c
+  TestRun.c
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 3 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 5 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 7 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 9 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 11 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 13 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 15 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 17 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*u' requires an argument of type 'int', but variadic argument 19 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*u' requires an argument of type 'int', but variadic argument 21 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 23 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*u' requires an argument of type 'int', but variadic argument 25 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*u' requires an argument of type 'int', but variadic argument 27 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 29 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 31 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*u' requires an argument of type 'int', but variadic argument 33 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*u' requires an argument of type 'int', but variadic argument 35 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*u' requires an argument of type 'int', but variadic argument 37 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*u' requires an argument of type 'int', but variadic argument 39 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*u' requires an argument of type 'int', but variadic argument 41 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 43 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 45 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*u' requires an argument of type 'int', but variadic argument 47 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*u' requires an argument of type 'int', but variadic argument 49 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*u' requires an argument of type 'int', but variadic argument 51 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*u' requires an argument of type 'int', but variadic argument 53 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 55 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 57 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): warning C4477: 'snprintf' : format string '%*s' requires an argument of type 'int', but variadic argument 60 has type 'size_t'
+C:\CUnit_zip\CUnitTestAppl2\CUnit\src\TestRun.c(614,27): message : this argument is used as a field width
+  Util.c
+  InitDeinit.c
+  main.c
+  UnitTestmain.c
+  Generating Code...
+  CUnitTestAppl2.vcxproj -> C:\CUnit_zip\CUnitTestAppl2\x64\Debug\CUnitTestAppl2.exe
