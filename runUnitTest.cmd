@@ -13,7 +13,7 @@ SET "IMPOSTER_LOG=C:\Users\danje\AppData\Local\Temp\tmp6DF4.tmp"
 REM Clear temporary file
 BREAK > "%IMPOSTER_LOG%"
 REM Activate Visual Studio developer tools environment
-CALL "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" x86
+CALL "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64
 @echo on
 REM Set path to cl.exe
 FOR /F "tokens=* USEBACKQ" %%F IN (`where cl`) DO (SET "PCLP_CFG_CL_PATH=%%F" & GOTO AFTER_FIRST_CL)
