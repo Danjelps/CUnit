@@ -21,7 +21,7 @@ void CmdTestTeardown(void)
 
 void CmdTest1(void)
 {
-	int testValue = 1;
+	uint testValue = -1;
 
 	CU_ASSERT_EQUAL(testValue, 0);
 }
