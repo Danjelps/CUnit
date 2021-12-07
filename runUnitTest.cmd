@@ -1,16 +1,10 @@
 @echo off
-call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" x86
 set PATH=%PATH%;C:\Users\danje\AppData\Local\Programs\Python\Python310
 echo "PATH="
 echo %PATH%
 set COVFILE=.\test.cov
 echo "COVFILE="
 echo %COVFILE%
-cov01 --on
-msbuild "CUnitTestAppl2.sln" /t:rebuild /p:Configuration=Debug /p:Platform="x86" /m
-".\Debug\CUnitTestAppl2.exe" xml out
-cov01 --off
-covselect --file "%COVFILE%" --add c:
 
 REM Automatically generated batch file to generate Microsoft Visual Studio compiler and project configurations for PC-lint Plus
 
@@ -38,7 +32,5 @@ BREAK > "%IMPOSTER_LOG%"
 msbuild "C:\CUnit_zip\CUnitTestAppl2\CUnitTestAppl2.sln" /p:CLToolEXE=imposter.exe /p:CLToolPath="C:\PC-Lint\windows\config"
 python "C:\PC-Lint\windows\config\pclp_config.py" --compiler=vs2019_64 --imposter-file="%IMPOSTER_LOG%" --config-output-lnt-file="C:\CUnit_zip\CUnitTestAppl2\pr_CUnitTestAppl2.lnt" --generate-project-config
 REM done
-
 pclp64 co_vs2019_x64.lnt pr_CUnitTestAppl2.lnt C:\PC-Lint\windows\lnt\env-jenkins.lnt > analysis.log
-
 pause
