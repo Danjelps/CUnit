@@ -2,3 +2,5 @@
 -width(0) // don't insert line breaks (unlimited output width)
 -"format=%f(%l): %t %n: %m"
 -hs1 // The height of a message should be 1
+-A //PAL-V
+-w3 //PAL-V
