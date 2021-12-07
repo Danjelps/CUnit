@@ -1,5 +1,6 @@
 @echo off
 call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" x86
+set PATH=%PATH%;C:\Users\danje\AppData\Local\Programs\Python\Python310
 echo "PATH="
 echo %PATH%
 set COVFILE=.\test.cov
