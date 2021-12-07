@@ -32,5 +32,5 @@ BREAK > "%IMPOSTER_LOG%"
 msbuild "C:\CUnit_zip\CUnitTestAppl2\CUnitTestAppl2.sln" /p:CLToolEXE=imposter.exe /p:CLToolPath="C:\PC-Lint\windows\config"
 python "C:\PC-Lint\windows\config\pclp_config.py" --compiler=vs2019_64 --imposter-file="%IMPOSTER_LOG%" --config-output-lnt-file="pr_CUnitTestAppl2.lnt" --generate-project-config
 REM done
-pclp64 co_vs2019_x64.lnt pr_CUnitTestAppl2.lnt C:\PC-Lint\windows\lnt\env-html.lnt > analysis.html
+pclp64 co_vs2019_x64.lnt pr_CUnitTestAppl2.lnt C:\PC-Lint\windows\lnt\env-jenkins.lnt > analysis.log
 
