@@ -19,7 +19,7 @@ REM Set path to cl.exe
 FOR /F "tokens=* USEBACKQ" %%F IN (`where cl`) DO (SET "PCLP_CFG_CL_PATH=%%F" & GOTO AFTER_FIRST_CL)
 :AFTER_FIRST_CL
 REM Generate compiler configuration
-python "C:\PC-Lint\windows\config\pclp_config.py" --compiler=vs2019_64 --compiler-bin="%PCLP_CFG_CL_PATH%" --config-output-lnt-file="C:\CUnit_zip\CUnitTestAppl2\co_vs2019_x64.lnt" --config-output-header-file="C:\CUnit_zip\CUnitTestAppl2\co_vs2019_x64.h" --generate-compiler-config
+python "C:\PC-Lint\windows\config\pclp_config.py" --compiler=vs2019_64 --compiler-bin="%PCLP_CFG_CL_PATH%" --config-output-lnt-file="co_vs2019_x64.lnt" --config-output-header-file="co_vs2019_x64.h" --generate-compiler-config
 REM build imposter.c
 cl "/FeC:\PC-Lint\windows\config\\" "C:\PC-Lint\windows\config\imposter.c"
 REM generate project configuration
@@ -30,7 +30,7 @@ SET "IMPOSTER_COMPILER=%PCLP_CFG_CL_PATH%"
 REM Clear temporary file
 BREAK > "%IMPOSTER_LOG%"
 msbuild "C:\CUnit_zip\CUnitTestAppl2\CUnitTestAppl2.sln" /p:CLToolEXE=imposter.exe /p:CLToolPath="C:\PC-Lint\windows\config"
-python "C:\PC-Lint\windows\config\pclp_config.py" --compiler=vs2019_64 --imposter-file="%IMPOSTER_LOG%" --config-output-lnt-file="C:\CUnit_zip\CUnitTestAppl2\pr_CUnitTestAppl2.lnt" --generate-project-config
+python "C:\PC-Lint\windows\config\pclp_config.py" --compiler=vs2019_64 --imposter-file="%IMPOSTER_LOG%" --config-output-lnt-file="pr_CUnitTestAppl2.lnt" --generate-project-config
 REM done
 pclp64 co_vs2019_x64.lnt pr_CUnitTestAppl2.lnt C:\PC-Lint\windows\lnt\env-jenkins.lnt > analysis.log
 pause
