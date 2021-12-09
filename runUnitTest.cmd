@@ -33,11 +33,11 @@ BREAK > "%IMPOSTER_LOG%"
 msbuild "C:\CUnit_zip\CUnitTestAppl2\CUnitTestAppl2.sln" /p:CLToolEXE=imposter.exe /p:CLToolPath="C:\PC-Lint\windows\config"
 python "C:\PC-Lint\windows\config\pclp_config.py" --compiler=vs2019_64 --imposter-file="%IMPOSTER_LOG%" --config-output-lnt-file="pr_CUnitTestAppl2.lnt" --generate-project-config
 REM done
-pclp64 co_vs2019_x64.lnt pr_CUnitTestAppl2.lnt C:\PC-Lint\windows\lnt\env-jenkins.lnt > analysis.log
+pclp64 co_vs2019_x64.lnt C:\PC-Lint\windows\lnt\env-jenkins.lnt pr_CUnitTestAppl2.lnt > analysis.log
 
-cov01 --on
-msbuild "CUnitTestAppl2.sln" /t:rebuild /p:Configuration=Debug /p:Platform="x86" /m
-".\Debug\CUnitTestAppl2.exe" xml out
-cov01 --off
-covselect --file "%COVFILE%" --add c:
+REM cov01 --on
+REM msbuild "CUnitTestAppl2.sln" /t:rebuild /p:Configuration=Debug /p:Platform="x86" /m
+REM ".\Debug\CUnitTestAppl2.exe" xml out
+REM cov01 --off
+REM covselect --file "%COVFILE%" --add c:
 
