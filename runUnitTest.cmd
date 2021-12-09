@@ -35,9 +35,9 @@ python "C:\PC-Lint\windows\config\pclp_config.py" --compiler=vs2019_64 --imposte
 REM done
 pclp64 -os(analysis.log) co_vs2019_x64.lnt C:\PC-Lint\windows\lnt\env-jenkins.lnt pr_CUnitTestAppl2.lnt 
 
-REM cov01 --on
-REM msbuild "CUnitTestAppl2.sln" /t:rebuild /p:Configuration=Debug /p:Platform="x86" /m
-REM ".\Debug\CUnitTestAppl2.exe" xml out
-REM cov01 --off
-REM covselect --file "%COVFILE%" --add c:
+cov01 --on
+msbuild "CUnitTestAppl2.sln" /t:rebuild /p:Configuration=Debug /p:Platform="x86" /m
+".\Debug\CUnitTestAppl2.exe" xml out
+cov01 --off
+covselect --file "%COVFILE%" --add c:
 
