@@ -40,5 +40,4 @@ msbuild "CUnitTestAppl2.sln" /t:rebuild /p:Configuration=Debug /p:Platform="x86"
 ".\Debug\CUnitTestAppl2.exe" xml out
 cov01 --off
 covselect --file "%COVFILE%" --add c:
-mkdir cov
-C:\BullseyeTest\bullshtml\bullshtml.exe -f "test.cov" "cov"
+C:\BullseyeTest\bullshtml\bullshtml.exe -f test.cov -e UTF_8 test.cov_cobertura
